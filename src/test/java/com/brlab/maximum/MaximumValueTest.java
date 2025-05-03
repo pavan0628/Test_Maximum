@@ -7,12 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class MaximumValueTest {
 
     @Test
-    void findIntMaxTest(){
-
-        Assertions.assertEquals(100,MaximumValue.FindMaxInt(10,100,20));
-
-    }
-    @Test
     void findMaxTestFirstPosition(){
 
         Assertions.assertEquals(100,MaximumValue.FindMaxInt(100,90,20),"Test case failed because the excpected output is 100");
@@ -30,6 +24,11 @@ class MaximumValueTest {
         Assertions.assertEquals(90,MaximumValue.FindMaxInt(10,90,200),"Test case failed because the excpected output is 200");
 
     }
+    @Test
+    void findMaxFloatTestFirstPosition(){
 
+        Assertions.assertEquals(100,MaximumValue.FindMaxFloat(100.0f,90.0f,20.0f),"Test case failed because the excpected output is 100.0");
+
+    }
   
 }
