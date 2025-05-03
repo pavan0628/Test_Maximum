@@ -36,5 +36,11 @@ class MaximumValueTest {
         Assertions.assertEquals(90.0f,MaximumValue.FindMaxFloat(10.0f,90.0f,20.0f),"Test case failed because the excpected output is 90.0");
 
     }
+    @Test
+    void findMaxFloatTestThirdPosition(){
+
+        Assertions.assertEquals(200.0f,MaximumValue.FindMaxFloat(10.0f,90.0f,200.0f),"Test case failed because the excpected output is 200.0");
+
+    }
   
 }
