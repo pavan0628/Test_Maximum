@@ -12,5 +12,13 @@ class MaximumValueTest {
         Assertions.assertEquals(100,MaximumValue.FindMaxInt(10,100,20));
 
     }
+
+    @Test
+    void findMaxTestFirstPosition(){
+
+        Assertions.assertEquals(100,MaximumValue.FindMaxInt(100,90,20),"Test case failed because the excpected output is 100");
+
+    }
+
   
 }
