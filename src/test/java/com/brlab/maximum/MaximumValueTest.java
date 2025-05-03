@@ -50,5 +50,9 @@ class MaximumValueTest {
     void findMaxStringTestSecondPosition(){
         Assertions.assertEquals(200.0f,MaximumValue.findMaxString("Rohan","Yogesh","Vinay"),"Test case failed because the excpected output is Yogesh");
     }
+    @Test
+    void findMaxStringTestThirdPosition(){
+        Assertions.assertEquals(200.0f,MaximumValue.findMaxString("Rohan","Vinay","Yogesh"),"Test case failed because the excpected output is Yogesh");
+    }
   
 }
